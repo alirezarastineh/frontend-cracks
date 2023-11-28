@@ -2,9 +2,6 @@ import { getAuthToken } from "./auth";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
-/**
- * Fetches an overview of created invoices.
- */
 export async function getInvoicesList() {
   const token = await getAuthToken();
   if (!token) {
