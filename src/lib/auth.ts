@@ -5,19 +5,7 @@ const CLIENT_ID = process.env.NEXT_PUBLIC_API_CLIENT_ID;
 const CLIENT_SECRET = process.env.NEXT_PUBLIC_API_CLIENT_SECRET;
 const GRANT_TYPE = process.env.NEXT_PUBLIC_API_GRANT_TYPE;
 
-/**
- * Fetches the OAuth2 token using the password grant type.
- */
 export async function getAuthToken() {
-  console.log({
-    TOKEN_ENDPOINT,
-    USERNAME,
-    PASSWORD,
-    CLIENT_ID,
-    CLIENT_SECRET,
-    GRANT_TYPE,
-  });
-
   // Check if environment variables are set
   if (
     !TOKEN_ENDPOINT ||
